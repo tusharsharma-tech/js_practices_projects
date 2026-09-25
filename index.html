@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card & Form Modal</title>
+  <!-- Remixicon for icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+
+
+
+  <div class="main-container">
+
+    <!-- Left Controls (Plus, Up, Down buttons) -->
+    <div class="left-controls">
+      <button class="icon-btn" id="addBtn"><i class="ri-add-line"></i></button>
+      <button class="icon-btn" id="upBtn"><i class="ri-arrow-up-line"></i></button>
+      <button class="icon-btn" id="downBtn"><i class="ri-arrow-down-line"></i></button>
+    </div>
+
+    <!-- Center Stacked Profile Card Container -->
+    <div id="stack" class="card-wrapper">
+    <div class="card-stack-bg"></div>
+      <div class="card-stack-bg bg-2"></div>
+      
+
+    </div>
+
+    <!-- Right Controls (Color Badges/Dots) -->
+    <div class="right-controls">
+      <span class="color-dot dot-black active"></span>
+      <span class="color-dot dot-purple"></span>
+      <span class="color-dot dot-orange"></span>
+      <span class="color-dot dot-teal"></span>
+    </div>
+
+  </div>
+
+
+
+
+
+  <!-- Center Modal Overlay (Hidden by default) -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-card">
+      <h2 class="modal-title">New Call</h2>
+
+      <form class="modal-form" id="callForm">
+        
+        <!-- Image URL -->
+        <div class="form-group">
+          <label>Image URL</label>
+          <input  type="url" id="imgUrl" placeholder="https://example.com/photo.jpg" />
+        </div>
+
+        <!-- Full Name -->
+        <div class="form-group">
+          <label>Full Name</label>
+          <input  type="text" id="fullName" placeholder="Enter full name" />
+        </div>
+
+        <!-- Home Town -->
+        <div class="form-group">
+          <label for="homeTown">Home Town</label>
+          <input  type="text" id="homeTown" placeholder="Enter home town" />
+        </div>
+
+        <!-- Purpose -->
+        <div class="form-group">
+          <label for="purpose">Purpose</label>
+          <input  type="text" id="purpose" placeholder="e.g., Quick appointment note" />
+        </div>
+
+        <!-- Category -->
+        <div class="form-group">
+          <label>Category</label>
+          <div class="tags-container">
+            <label class="tag tag-emergency">
+              <input  type="radio" name="category" value="Emergency" />
+              <span class="tag-text">Emergency</span>
+            </label>
+
+            <label class="tag tag-important">
+              <input  type="radio" name="category" value="Important" />
+              <span class="tag-text">Important</span>
+            </label>
+
+            <label class="tag tag-urgent">
+              <input  type="radio" name="category" value="Urgent" />
+              <span class="tag-text">Urgent</span>
+            </label>
+
+            <label class="tag tag-norush">
+              <input  type="radio" name="category" value="No Rush" />
+              <span class="tag-text">No Rush</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Form Buttons -->
+        <div class="form-actions">
+          <button type="submit" class="btn-create">Create Note</button>
+          <button type="button" class="btn-close" id="closeBtn">Close</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
