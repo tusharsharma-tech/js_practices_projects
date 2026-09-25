@@ -1,68 +1,45 @@
-# Call Reminder App
+# Frontend Practice Projects
 
-A lightweight call reminder and profile card app built with HTML, CSS, and vanilla JavaScript. Create reminder cards for people, organize them by category, and move through the card stack with simple controls.
+A collection of small frontend practice projects built with HTML, CSS, and JavaScript. Each folder is an independent project that can be opened and tested in a browser.
 
-## Features
+## Projects
 
-- Add a reminder with:
-  - Profile image URL
-  - Full name
-  - Home town
-  - Call purpose
-  - Category
-- Store reminders in the browser using `localStorage`.
-- Display the newest reminder at the front of the card stack.
-- Move through reminders with the up and down controls.
-- Responsive layout for desktop and mobile screens.
-- Remix Icon support for interface icons.
+| Project | Description |
+| --- | --- |
+| [CALLREMINDEAPP](CALLREMINDEAPP/) | Create and manage call reminder profile cards with browser local storage. |
+| [displaydarkmode](displaydarkmode/) | Practice project for switching between light and dark display modes. |
+| [downloadProgressBar](downloadProgressBar/) | Download progress bar interaction practice. |
+| [email_password_validation](email_password_validation/) | Email and password form validation practice. |
+| [Notestext](Notestext/) | Simple notes text application practice. |
 
-## Technologies
+## Running a Project
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- Browser `localStorage`
-- Remix Icon CDN
+1. Open the project folder you want to try.
+2. Open its `index.html` file in a modern browser.
+3. For a better development workflow, use the Live Server extension in VS Code.
 
-## Getting Started
+Most projects are standalone and do not require package installation or a build command.
 
-### Option 1: Open directly
-
-Open `index.html` in a modern web browser.
-
-### Option 2: Use VS Code Live Server
-
-1. Open this folder in VS Code.
-2. Start `index.html` with the Live Server extension.
-3. Open the local URL shown by Live Server.
-
-No package installation or build command is required.
-
-## How to Use
-
-1. Select the plus button to open the new call form.
-2. Enter the required details and choose a category.
-3. Select **Create Note** to add the reminder.
-4. Use the arrow buttons to move through saved reminders.
-
-Reminder data is saved only in the current browser's local storage. Clearing browser site data will remove the saved reminders.
-
-## Project Structure
+## Repository Structure
 
 ```text
-CALLREMINDEAPP/
-├── index.html    # Application markup and form
-├── script.js     # Form handling, storage, and card rendering
-├── styles.css    # Layout, card, modal, and responsive styles
-└── README.md     # Project documentation
+practices/
+├── CALLREMINDEAPP/
+├── Notestext/
+├── displaydarkmode/
+├── downloadProgressBar/
+├── email_password_validation/
+└── README.md
 ```
 
-## Notes
+## Adding a New Practice
 
-- The app loads Remix Icons from jsDelivr, so an internet connection is needed for those icons to appear.
-- The image URL is rendered as the card avatar, so use a publicly accessible image URL.
-- The Call and Message buttons are currently visual card actions and do not initiate calls or messages.
+Create a new folder inside `practices`, add the project files, then run:
 
-## License
+```powershell
+git add .
+git commit -m "Add new practice project"
+git push
+```
 
-This project is available for personal learning and practice.
+Keeping each practice in its own folder makes the collection easy to browse and expand.
