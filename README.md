@@ -11,6 +11,7 @@ A collection of small frontend practice projects built with HTML, CSS, and JavaS
 | [downloadProgressBar](downloadProgressBar/) | Download progress bar interaction practice. |
 | [email_password_validation](email_password_validation/) | Email and password form validation practice. |
 | [Notestext](Notestext/) | Simple notes text application practice. |
+| [toastNotification](tost/) | showing the toasted notifications |
 
 ## Running a Project
 
