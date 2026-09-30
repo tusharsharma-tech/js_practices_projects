@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Cards</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="layout">
+
+    <!-- Fixed Form -->
+    <aside class="form-section">
+      <h1>Add User</h1>
+
+      <form id="userForm">
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter name"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="role">Role</label>
+          <input
+            type="text"
+            id="role"
+            placeholder="Enter role"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="bio">Bio</label>
+          <textarea
+            id="bio"
+            rows="4"
+            placeholder="Write bio..."
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="image">Image URL</label>
+          <input
+            type="url"
+            id="image"
+            placeholder="https://example.com/photo.jpg"
+            required
+          >
+        </div>
+
+        <button type="submit">Add User</button>
+
+      </form>
+    </aside>
+
+
+    <!-- Cards Section -->
+    <main class="cards-section">
+
+      <h1>Users</h1>
+
+      <div class="users-container" id="usersContainer">
+
+        <!-- JavaScript cards yahan add honge -->
+  
+
+        
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
